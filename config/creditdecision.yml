@@ -1,0 +1,29 @@
+server:
+  port: 8081
+
+eureka:
+  instance: 
+    hostname: localhost
+    prefer-ip-address: true
+
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*/*.xml
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://rm-bp1spj817lbil5ab5o.mysql.rds.aliyuncs.com:3306/lightningcash?characterEncoding=UTF-8&allowMultiQueries=true
+    username: xjxcashman
+    password: Sh@nghai
+  redis:
+    host: r-bp156c981d9d6f94.redis.rds.aliyuncs.com
+    database: 0
+    port: 6379
+    password: Phk429qI
+    pool:
+      max-active: 8
+      max-wait: 1
+      max-idle: 8
+      min-idle: 0
+    timeout: 0
